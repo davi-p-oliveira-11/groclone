@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Groclone helps teams collect, organize, and replicate research workflows with precision. Streamline discovery, centralize knowledge, and accelerate decision-making with an intelligent, unified platform.",
   icons: {
-    icon: "/images/logo.svg",
+    icon: "./images/logo.svg",
   },
 };
 

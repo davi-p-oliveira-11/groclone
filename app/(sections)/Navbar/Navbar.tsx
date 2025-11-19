@@ -23,8 +23,8 @@ export default function Navbar() {
 
   const navbarData: NavbarData = {
     logo: {
-      src: "/images/logo.svg",
-      alt: "Halal Lab Logo",
+      src: "./images/logo.svg",
+      alt: "Groclone",
     },
     links: [
       { label: "Pricing", href: "#pricing" },
