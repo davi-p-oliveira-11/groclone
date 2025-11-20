@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Navbar from "./(sections)/Navbar/Navbar";
 import Hero from "./(sections)/Hero/Hero";
 import ShowCaseSection from "./(sections)/ShowCaseSection/ShowCaseSection";
 import Footer from "./(sections)/Footer/Footer";
 import Features from "./(sections)/Features/Features";
-import Testimonials from "./(sections)/Testimonials/Testimonials";
+import TestimonialSection from "./(sections)/Testimonials/TestimonialSection";
+import { testimonials } from "./(sections)/Testimonials/testimonialsData";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <main aria-label="Main Content">
         <ShowCaseSection />
         <Features />
-        <Testimonials />
+        <TestimonialSection testimonials={testimonials} />
       </main>
 
       <footer aria-label="site footer">
