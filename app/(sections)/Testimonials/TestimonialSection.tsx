@@ -3,15 +3,20 @@
 import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Testimonial, testimonials } from "./testimonialsData";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { TestimonialCard } from "./TestimonialCard";
-import { testimonials } from "./testimonialsData";
 
-export default function TestimonialSection() {
+
+interface TestimonialSectionProps {
+  testimonials: Testimonial[];
+}
+
+export default function TestimonialSection({ testimonials }: TestimonialSectionProps) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const swiperRef = useRef<any>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
