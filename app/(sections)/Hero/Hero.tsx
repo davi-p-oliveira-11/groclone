@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -23,6 +24,17 @@ const Hero = () => {
           >
             Get Started
           </button>
+        </div>
+
+         {/* Image Below Buttons */}
+        <div className="mt-12 w-full flex justify-center">
+          <Image
+            src="/images/dashboard.svg"
+            alt="Groclone dashboard preview"
+            width={1224}
+            height={810}
+            className="w-full max-w-3xl h-auto"
+          />
         </div>
       </div>
     </section>
